@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>友谊的小船说翻就翻</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<style type="text/css">
+body {
+	margin: 0;
+	position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.mk_box {
+//	background-image: url('http://img1.replays.net/lol.replays.net/uploads/body/2016/04/1460088341l0V.jpg');
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+}
+
+input {
+    text-indent: 20px;
+    height: 40px;
+    width: 80%;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #F1EFEF;
+    border: 0;
+}
+.mk_submit {
+    width: 110px;
+    height: 40px;
+    border: 0;
+    background-color: #8BC34A;
+    border-radius: 8px;
+    color: #fff;
+	font-size: 16px;
+}
+.mk_inner {
+}
+</style>
+</head>
+<body>
+<div class="mk_box">
+	<h1>友谊的小船说翻就翻</h1>
+	<div class="mk_inner">
+		<p><input type="text" placeholder="第一句话(比如: 你是做什么的？)" id="text1" class="mk_qa"></p>
+		<p><input type="text" placeholder="第二句话(比如: 程序员)" id="text2" class="mk_ans"></p>
+		<p><input type="text" placeholder="第三句话(比如: 快帮我修电脑吧！)" id="text3" class="mk_rea"></p>
+		<button onclick="set()" class="mk_submit">推翻小船</button>
+	</div>
+	<div>
+		<center style="font-size: 12px; margin: 20px;">长按以下图片保存,分享到朋友圈吧！</center>
+		<img src="./friend.php" style="width: 90%; max-width: 400px;" id="img" />
+	</div>
+</div>
+<script>
+	function set() {
+		img.src = "./friend.php?text1="+ text1.value + '&text2=' + text2.value + '&text3=' + text3.value;
+	}
+</script>
+<div style="display:none"><script src="http://s95.cnzz.com/stat.php?id=1258545161&web_id=1258545161" language="JavaScript"></script></div>
+</body>
+</html>
