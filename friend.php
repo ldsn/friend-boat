@@ -1,7 +1,7 @@
 <?php
 Header("Content-type: image/jpeg; charset=utf-8");
 
-$im = imagecreatefromjpeg("./friend.jpg");
+$im = imagecreatefromjpeg("./friend1.jpg");
 
 
 imagealphablending($im, true);
